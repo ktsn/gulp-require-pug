@@ -2,7 +2,7 @@ const path = require('path')
 const Readable = require('stream').Readable
 const Vinyl = require('vinyl')
 const data = require('gulp-data')
-const requirePug = require('../src/index')
+const requirePug = require('../lib/index')
 
 describe('gulp-require-pug', () => {
   it('normal', done => {
