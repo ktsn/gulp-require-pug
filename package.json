@@ -1,0 +1,43 @@
+{
+  "name": "gulp-require-pug",
+  "version": "0.0.0",
+  "author": "katashin",
+  "description": "Load pug into your JavaScript",
+  "keywords": [
+    "gulp",
+    "require",
+    "commonjs",
+    "pug"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/ktsn/gulp-require-pug",
+  "bugs": "https://github.com/ktsn/gulp-require-pug/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ktsn/gulp-require-pug.git"
+  },
+  "scripts": {
+    "prepublish": "npm run release",
+    "lint": "eslint src test",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jasmine JASMINE_CONFIG_PATH=test/jasmine.json",
+    "release": "npm run lint && npm run test"
+  },
+  "devDependencies": {
+    "eslint": "^3.0.0",
+    "eslint-config-ktsn": "^1.0.0",
+    "gulp-data": "^1.2.1",
+    "jasmine": "^2.5.2",
+    "mocha": "^3.2.0",
+    "vinyl": "^2.0.1"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.8",
+    "pug": "^2.0.0-beta6",
+    "through2": "^2.0.3"
+  }
+}
